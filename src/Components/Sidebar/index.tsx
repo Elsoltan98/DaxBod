@@ -1,4 +1,6 @@
 import { FC } from "react";
+import { links } from "../../constants";
+import LinkItem from "../LinkItem";
 
 interface SidebarProps {
   isSidebarOpen?: boolean;
@@ -11,7 +13,17 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarOpen }) => {
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >
-      Sidebar
+      <ul>
+        {links.map((link, index) => (
+          <LinkItem
+            key={index}
+            href={link.href}
+            icon={link.icon}
+            text={link.text}
+            badge={link.badge}
+          />
+        ))}
+      </ul>
     </aside>
   );
 };
