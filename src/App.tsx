@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Header, Sidebar } from "./Components";
+import { Header, Profile, Sidebar } from "./Components";
 import Main from "./ui/Main";
 import Content from "./ui/Content";
 
@@ -18,9 +18,8 @@ const App = () => {
       />
       <Sidebar isSidebarOpen={isSidebarOpen} />
       <Main>
-        <Content>
-          <h1>Content</h1>
-        </Content>
+        <Content>Main Content</Content>
+        <Profile />
       </Main>
     </div>
   );
