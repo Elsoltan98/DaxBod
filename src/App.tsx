@@ -19,7 +19,7 @@ const App = () => {
       <Sidebar isSidebarOpen={isSidebarOpen} />
       <Main>
         <Content>
-          <Stats />
+          <Stats darkMode={darkMode} />
           <div className="flex flex-col gap-3 lg:flex-row"></div>
         </Content>
         <Profile />
