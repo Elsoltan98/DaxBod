@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Header, Profile, Sidebar, Stats } from "./Components";
+import { Header, Profile, Sidebar, Stats, Team } from "./Components";
 import Main from "./ui/Main";
 import Content from "./ui/Content";
 
@@ -20,7 +20,9 @@ const App = () => {
       <Main>
         <Content>
           <Stats darkMode={darkMode} />
-          <div className="flex flex-col gap-3 lg:flex-row"></div>
+          <div className="flex flex-col gap-3 lg:flex-row">
+            <Team />
+          </div>
         </Content>
         <Profile />
       </Main>
