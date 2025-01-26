@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Header, Profile, Sidebar, Stats, Team } from "./Components";
+import { Event, Header, Profile, Sidebar, Stats, Team } from "./Components";
 import Main from "./ui/Main";
 import Content from "./ui/Content";
 
@@ -22,6 +22,7 @@ const App = () => {
           <Stats darkMode={darkMode} />
           <div className="flex flex-col gap-3 lg:flex-row">
             <Team />
+            <Event />
           </div>
         </Content>
         <Profile />
